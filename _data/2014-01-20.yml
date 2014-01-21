@@ -1,2 +1,9 @@
-- name: yermom
-  github: hismom
+- content: "yermom is a verdana" -- typo mofo
+  type: quote
+  poster: larry
+- content: http://i.imgur.com/2o6OXsb.gif
+  type: image
+  poster: curly
+- content: http://blackmilkclothing.com/collections/middle-earth/products/the-hobbit-map-dress
+  type: content
+  poster: mo

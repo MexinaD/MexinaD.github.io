@@ -4,15 +4,15 @@ title: Your New Jekyll Site
 ---
 
 <ul>
-  {% for member in site.data.2014-01-20 %}
+  {% for post in site.data.2014-01-20 reversed %}
   <li>
-  <a href="https://github.com/{{ member.github }}">
-    {{ member.name }}
-  </a>
+  <em>{{ post.type }}</em> - {{ post.content }}
+  <br />
+  {{ post.poster }}
   </li>
   {% endfor %}
 </ul>
-
+<hr />
 <div id="home">
   <h1>Blog Posts</h1>
   <ul class="posts">

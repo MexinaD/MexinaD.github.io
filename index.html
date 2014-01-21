@@ -3,6 +3,16 @@ layout: default
 title: Your New Jekyll Site
 ---
 
+<ul>
+  {% for member in site.data.2014-01-20 %}
+  <li>
+  <a href="https://github.com/{{ member.github }}">
+    {{ member.name }}
+  </a>
+  </li>
+  {% endfor %}
+</ul>
+
 <div id="home">
   <h1>Blog Posts</h1>
   <ul class="posts">

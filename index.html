@@ -1,13 +1,22 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Your New Blog
 ---
 
-<p>Arafat</p>
-{% assign today = date: "%Y-%M-%d" %}
-{{ today }}
+<p>Arafat
+{% assign myname = 'M' %}
+{{myname}}
+howdy
+{{ page.date }}
+Hello {{ site.time | date: "%Y %h" }}
+{% assign d = site.time | date: "%Y-%M-%d" %}
+<br />{{d}}
+</p>
 <ul>
-  {% for post in site.data.2014-01-20 reversed %}
+  <!-- I brokes it.
+      Can't dynamically load the data file for 'today'
+  --!>
+  {% for post in site.data.d reversed %}
   <li>
   <em>{{ post.type }}</em> - {{ post.content }}
   <br />

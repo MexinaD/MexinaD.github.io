@@ -8,3 +8,6 @@
 - content: http://blackmilkclothing.com/collections/middle-earth/products/the-hobbit-map-dress
   type: content
   poster: mo
+- content: some text
+  type: quote
+  poster: howdy

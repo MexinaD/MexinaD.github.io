@@ -3,7 +3,8 @@ layout: default
 title: Your New Blog
 ---
 
-{% include list.html period="week" %}
+{% assign d = site.time | date: "%Y%m%d" %}
+{% include list.html period=d %}
 
 
 <hr />
@@ -13,19 +14,19 @@ title: Your New Blog
 howdy
 {{ page.date }}
 Hello {{ site.time | date: "%Y %h" }}
-{% assign d = site.time | date: "%Y-%M-%d" %}
 <br />{{d}}
 </p>
+<hr />
+{{ site.data.[site.time] }}
 <ul>
   <!-- I brokes it.
       Can't dynamically load the data file for 'today'
   --!>
-  {% for post in site.data.d reversed %}
-  <li>
-  <em>{{ post.type }}</em> - {{ post.content }}
-  <br />
-  {{ post.poster }}
-  </li>
+  {% for post in site.data.[d] %}
+    <li>
+      <em>{{ post.type }}</em> - {{ post.content }}
+      <br />{{ post.poster }}
+    </li>
   {% endfor %}
 </ul>
 <hr />

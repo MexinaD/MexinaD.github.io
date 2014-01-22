@@ -1,1 +1,9 @@
-yermom howdy
+yermom howdy {{ include.period }}
+<ul>
+  {% for post in site.data.[include.period] %}
+    <li>
+      <em>{{ post.type }}</em> - {{ post.content }}
+      <br />{{ post.poster }}
+    </li>
+  {% endfor %}
+</ul>

@@ -161,3 +161,6 @@ a:visited { color: #a0a; }
 }
 
 img {float: left}
+
+#top {backgroung-color: ccc; 
+      border-radius: 22px}

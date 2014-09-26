@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The love for Mathematics"
-date:   2014-01-20 22:58:35
+date:   2014-09-26 16:35:55
 categories: jekyll update
 ---
 
